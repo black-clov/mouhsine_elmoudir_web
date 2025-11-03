@@ -3,10 +3,8 @@ import { Col, Row } from "react-bootstrap";
 import {
   SiVisualstudiocode,
   SiPostman,
-  SiSlack,
   SiVercel,
-  SiMacos,
-  SiUnity
+  SiUnity,
 } from "react-icons/si";
 
 function Toolstack() {

@@ -1,14 +1,12 @@
 import React from "react";
 import { Row, Col, Badge } from "react-bootstrap";
 import { motion } from "framer-motion";
-import {
-  FaLaptopCode,
-  FaUsers,
-  FaLightbulb,
-} from "react-icons/fa";
-import "./Techstack.css";
+import { FaLaptopCode, FaUsers, FaLightbulb } from "react-icons/fa";
 
-function Techstack() {
+
+
+
+const Techstack = () => {
   const sections = [
     {
       icon: <FaLaptopCode className="section-icon" />,
@@ -32,7 +30,7 @@ function Techstack() {
       icon: <FaUsers className="section-icon" />,
       title: "Méthodologies Agiles & Collaboration",
       tags: [
-        "Agile/SCRUM",
+        "Agile / SCRUM",
         "Collaboration d’équipe",
         "Communication",
         "Partage de connaissances",
@@ -56,34 +54,50 @@ function Techstack() {
 
   return (
     <div className="techstack-section">
-      <h2 className="techstack-title">Compétences</h2>
+      <motion.h2
+        className="techstack-title"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+      >
+        Compétences
+      </motion.h2>
+
       {sections.map((section, idx) => (
         <motion.div
           key={idx}
           className="techstack-block"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: idx * 0.2 }}
         >
           <div className="techstack-header">
             {section.icon}
-            <h3>{section.title}</h3>
+            <h3 className="techstack-subtitle">{section.title}</h3>
           </div>
 
           <Row className="justify-content-center">
             {section.tags.map((tag, i) => (
               <Col xs="auto" key={i}>
-                <Badge className="techstack-tag">{tag}</Badge>
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <Badge className="techstack-tag">{tag}</Badge>
+                </motion.div>
               </Col>
             ))}
           </Row>
 
-          {idx < sections.length - 1 && <hr className="techstack-divider" />}
+          {idx < sections.length - 1 && (
+            <hr className="techstack-divider" aria-hidden="true" />
+          )}
         </motion.div>
       ))}
     </div>
   );
-}
+};
 
 export default Techstack;
