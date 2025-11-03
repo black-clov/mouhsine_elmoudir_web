@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/mouhsine_elmoudir_web/static/css/main.a02da333.css",
+    "main.js": "/mouhsine_elmoudir_web/static/js/main.1a2941e8.js",
+    "static/js/453.5d79306b.chunk.js": "/mouhsine_elmoudir_web/static/js/453.5d79306b.chunk.js",
+    "static/media/CV_ELMOUDIR_MOUHSINE_WEBSITE.pdf": "/mouhsine_elmoudir_web/static/media/CV_ELMOUDIR_MOUHSINE_WEBSITE.5ed4fcd7076d3d8aefa8.pdf",
+    "static/media/about.png": "/mouhsine_elmoudir_web/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/home-bg.jpg": "/mouhsine_elmoudir_web/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/avatar.svg": "/mouhsine_elmoudir_web/static/media/avatar.5852f40fbb38aa284829fa3fb7722225.svg",
+    "index.html": "/mouhsine_elmoudir_web/index.html",
+    "static/media/pre.svg": "/mouhsine_elmoudir_web/static/media/pre.d4812f51c8c80976eaab.svg",
+    "main.a02da333.css.map": "/mouhsine_elmoudir_web/static/css/main.a02da333.css.map",
+    "main.1a2941e8.js.map": "/mouhsine_elmoudir_web/static/js/main.1a2941e8.js.map",
+    "453.5d79306b.chunk.js.map": "/mouhsine_elmoudir_web/static/js/453.5d79306b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a02da333.css",
+    "static/js/main.1a2941e8.js"
+  ]
+}
